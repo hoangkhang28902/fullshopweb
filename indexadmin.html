@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Web | KainD Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Responsive bootstrap 4 admin template" name="description">
+    <meta content="Coderthemes" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css\admin1.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet">
+    <link href="css\admin2.css" rel="stylesheet" type="text/css">
+    <link href="css\admin3.css" rel="stylesheet" type="text/css" id="app-stylesheet">
+    <link rel="stylesheet" href="./css/teststype.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                <li class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="..\imageweb\vn.png" alt="user-image" class="mr-2" height="12"> <span class="align-middle">Vietnamese </span>
+                    </a>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="..\imageweb\avatar-5.jpg" alt="user-image" class="rounded-circle">
+                        <span class="pro-user-name ml-1">
+                                    Khang Nguyễn  
+                            </span>
+                    </a>
+
+                </li>
+
+                <li class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="../indexlogout.html" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="fas fa-sign-out-alt"></i><span class="pro-user-name ml-1"> Thoát </span>
+                    </a>
+                </li>
+
+                <li class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <!-- LOGO -->
+            <div class="logo-box">
+                <a href="indexadmin.html" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                           <span class="logo-lg-text-dark">KainD</span>
+                    </span>
+
+                </a>
+            </div>
+
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                <li class="d-none d-sm-block">
+                    <form class="app-search">
+                        <div class="app-search-box">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!-- end Topbar -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+
+            <div class="user-box">
+                <div class="float-left">
+                    <img src="imageweb\avatar-5.jpg" alt="" class="avatar-md rounded-circle">
+                </div>
+                <div class="user-info">
+                    <a href="#">Khang Nguyễn</a>
+                </div>
+            </div>
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+
+                <ul class="metismenu" id="side-menu">
+
+
+                    <li>
+                        <a href="../indexadmin.html"><i class="fas fa-tachometer-alt"></i>
+                            <span> Tổng quan </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../webpage/danhsachsp.html"><i class="fas fa-clipboard-list"></i>
+                            <span> Danh sách sản phẩm </span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../webpage/themsp.html"><i class="fas fa-plus-square"></i>
+                            <span> Thêm sản phẩm </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="../webpage/suasp.html"><i class="fas fa-pen-square"></i>
+                            <span> Sửa sản phẩm </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../webpage/xoasp.html"><i class="fas fa-trash"></i>
+                            <span>  Xóa sản phẩm  </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="../webpage/donhang.html"><i class="fas fa-clipboard-check"></i>
+                            <span>  Đơn hàng </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="../webpage/thongke.html"><i class="fas fa-chart-line"></i>
+                            <span>  Thống kê  </span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../webpage/donhang.html"><i class="fas fa-address-book"></i>
+                            <span> Danh sách người dùng </span>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Start container-fluid -->
+                <div class="container-fluid">
+
+                    <!-- start  -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <h4 class="header-title mb-3">Tổng quan</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card-box">
+                                <a href="#" class="btn btn-sm btn-primary float-right">Xem</a>
+                                <h6 class="text-muted font-13 mt-0 text-uppercase">Sản phẩm đã bán</h6>
+                                <h2 class="mb-3 mt-2"><span>1,890</span></h2>
+                                <div class="progress progress-sm m-0">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
+                                        <span class="sr-only">70% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card-box">
+                                <a href="#" class="btn btn-sm btn-primary float-right">Xem</a>
+                                <h6 class="text-muted font-13 mt-0 text-uppercase">Giá trung bình</h6>
+                                <h2 class="mb-3 mt-2">$<span>22.56</span></h2>
+                                <div class="progress progress-sm m-0">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
+                                        <span class="sr-only">80% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card-box">
+                                <a href="#" class="btn btn-sm btn-primary float-right">Xem</a>
+                                <h6 class="text-muted mt-0 font-13 text-uppercase">Số đơn hàng</h6>
+                                <h2 class="mb-3">9,254</h2>
+                                <div class="progress progress-sm m-0">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
+                                        <span class="sr-only">90% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End row -->
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card-box">
+                                <h6 class="mt-0 text-dark">Tình trạng thu nhập</h6>
+                                <h2 class="text-primary text-center mt-4 mb-4">$<span>31570</span></h2>
+                                <p class="text-muted mb-0">Tổng thu nhập: $252506 <span class="float-right"></span></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card-box">
+                                <h6 class="mt-0 text-dark">Tình trạng bán hàng</h6>
+                                <h2 class="text-pink text-center mt-4 mb-4"><span>683</span></h2>
+                                <p class="mb-0 text-muted">Tổng bán hàng: 2398 <span class="float-right"></span></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card-box">
+                                <h6 class="mt-0 text-dark">Tình trạng đơn hàng</h6>
+                                <h2 class="text-success text-center mt-4 mb-4">$<span>3652</span></h2>
+                                <p class="mb-0 text-muted">Tổng đơn hàng: $22506 <span class="float-right"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card-box widget-inline">
+                                <div class="row">
+                                    <div class="col-md-6  col-xl-3 widget-inline-box">
+                                        <div class="text-center p-3">
+                                            <h2 class="mt-2"> <b>8954</b></h2>
+                                            <p class="text-muted mb-0">Tổng doanh thu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6  col-xl-3 widget-inline-box">
+                                        <div class="text-center p-3">
+                                            <h2 class="mt-2"> <b>7841</b></h2>
+                                            <p class="text-muted mb-0">Thu nhập hàng tháng</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6  col-xl-3 widget-inline-box">
+                                        <div class="text-center p-3">
+                                            <h2 class="mt-2"><b>6521</b></h2>
+                                            <p class="text-muted mb-0">Số lượng người dùng</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6  col-xl-3">
+                                        <div class="text-center p-3">
+                                            <h2 class="mt-2"> <b>325</b></h2>
+                                            <p class="text-muted mb-0">Số lượng truy cập</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card-box">
+                                <h5 class="mt-0 font-14 mb-3">Admin</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-hover mails m-0 table table-actions-bar table-centered">
+                                        <thead>
+                                            <tr>
+                                                <th style="min-width: 95px;">
+
+                                                    <div class="checkbox checkbox-single checkbox-primary">
+                                                        <input type="checkbox" class="custom-control-input" id="action-checkbox">
+                                                        <label class="custom-control-label" for="action-checkbox">&nbsp;</label>
+                                                    </div>
+                                                </th>
+                                                <th>Người dùng</th>
+                                                <th>Email</th>
+                                                <th>Sản phẩm</th>
+                                                <th>Ngày bắt đàu</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-primary mr-2 float-left">
+                                                        <input id="checkbox2" type="checkbox">
+                                                        <label for="checkbox2"></label>
+                                                    </div>
+
+                                                    <img src="imageweb\avatar-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    Hoàng Khang
+                                                </td>
+
+                                                <td>
+                                                    <a href="#" class="text-muted">hoangkhang@gmail.com</a>
+                                                </td>
+
+                                                <td>
+                                                    <b><a href="" class="text-dark"><b>356</b></a>
+                                                    </b>
+                                                </td>
+
+                                                <td>
+                                                    01/11/2021
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-primary mr-2 float-left">
+                                                        <input id="checkbox1" type="checkbox">
+                                                        <label for="checkbox1"></label>
+                                                    </div>
+
+                                                    <img src="imageweb\avatar-1.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    Phan Anh
+                                                </td>
+
+                                                <td>
+                                                    <a href="#" class="text-muted">phananh@gamil.com</a>
+                                                </td>
+
+                                                <td>
+                                                    <b><a href="" class="text-dark"><b>568</b></a>
+                                                    </b>
+                                                </td>
+
+                                                <td>
+                                                    01/11/2021
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-primary mr-2 float-left">
+                                                        <input id="checkbox3" type="checkbox">
+                                                        <label for="checkbox3"></label>
+                                                    </div>
+
+                                                    <img src="imageweb\avatar-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    Hữu Đạt
+                                                </td>
+
+                                                <td>
+                                                    <a href="#" class="text-muted">huudat@gmail.com</a>
+                                                </td>
+                                                <td>
+                                                    <b><a href="" class="text-dark"><b>201</b></a>
+                                                    </b>
+                                                </td>
+
+                                                <td>
+                                                    12/11/2021
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-primary mr-2 float-left">
+                                                        <input id="checkbox4" type="checkbox">
+                                                        <label for="checkbox4"></label>
+                                                    </div>
+
+                                                    <img src="imageweb\avatar-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    Xuân Sang
+                                                </td>
+
+                                                <td>
+                                                    <a href="#" class="text-muted">xuansang@gmail.com</a>
+                                                </td>
+
+                                                <td>
+                                                    <b><a href="" class="text-dark"><b>156</b></a>
+                                                    </b>
+                                                </td>
+
+                                                <td>
+                                                    14/11/2021
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-primary mr-2 float-left">
+                                                        <input id="checkbox5" type="checkbox">
+                                                        <label for="checkbox5"></label>
+                                                    </div>
+
+                                                    <img src="imageweb\avatar-1.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    Kiều Lam
+                                                </td>
+
+                                                <td>
+                                                    <a href="#" class="text-muted">kieulam@gmail.com</a>
+                                                </td>
+
+                                                <td>
+                                                    <b><a href="" class="text-dark"><b>356</b></a>
+                                                    </b>
+                                                </td>
+
+                                                <td>
+                                                    20/11/2021
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox checkbox-primary mr-2 float-left">
+                                                        <input id="checkbox6" type="checkbox">
+                                                        <label for="checkbox6"></label>
+                                                    </div>
+
+                                                    <img src="imageweb\avatar-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm">
+                                                </td>
+
+                                                <td>
+                                                    Thảo Huy
+                                                </td>
+
+                                                <td>
+                                                    <a href="#" class="text-muted">thaohuy@gmail.com</a>
+                                                </td>
+
+                                                <td>
+                                                    <b><a href="" class="text-dark"><b>956</b></a>
+                                                    </b>
+                                                </td>
+
+                                                <td>
+                                                    24/11/2021
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </div>
+                <!-- end container-fluid -->
+
+
+
+                <!-- Footer Start -->
+                <!-- <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                2017 - 2020 &copy; Simple theme by <a href="">Coderthemes</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer> -->
+                <!-- end Footer -->
+
+            </div>
+            <!-- end content -->
+
+        </div>
+        <!-- END content-page -->
+
+    </div>
+    <!-- END wrapper -->
+
+</body>
+
+</html>

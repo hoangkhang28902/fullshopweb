@@ -1,0 +1,364 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*phần đầu trang*/
+
+.mainshop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(224, 224, 224);
+    padding: 10px 0px;
+    /*heigth  60px*/
+}
+
+
+/* <!-- phần chứ thông tin khách hàng --> */
+
+.dieuhuong ul li {
+    display: inline-flex;
+    font-size: 20px;
+    padding: 8px 12px;
+    font-weight: 600;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.dieuhuong a {
+    text-decoration: none;
+    color: black;
+}
+
+.dieuhuong a:hover {
+    color: red;
+    transition: 0.75s;
+}
+
+
+/* <!-- phần tài khoản của khách --> */
+
+#user {
+    position: relative;
+}
+
+#user:hover #usermenu {
+    display: block;
+    transition: 0.25s;
+}
+
+#usermenu {
+    background-color: whitesmoke;
+    position: absolute;
+    margin-left: 0;
+    top: 100%;
+    right: 0;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0px 1px 2px #b4b0b0;
+    display: none;
+}
+
+#usermenu::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent whitesmoke transparent;
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+
+#useritem a {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#useritem a:hover {
+    color: #fafafa;
+    background-color: #554f4f;
+    border-radius: 4px;
+}
+
+#user img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: 140px;
+}
+
+
+/* <!-- phần giới tính khách --> */
+
+.doituong ul li {
+    display: inline-flex;
+    font-size: 20px;
+    padding: 8px 12px;
+    font-weight: 600;
+}
+
+.doituong a {
+    text-decoration: none;
+    color: black;
+}
+
+.doituong a:hover {
+    color: red;
+    transition: 0.75s;
+}
+
+
+/* tên shop */
+
+.name {
+    font-size: 25px;
+    margin-left: 290px;
+}
+
+
+/* <!-- phần menu lựa chọn --> */
+
+.menumain {
+    display: flex;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.menumain ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px 15px;
+    position: relative;
+}
+
+.menumain a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.menumain a:hover {
+    color: red;
+    transition: 0.75s;
+}
+
+
+/* <!-- thanh tìm kiếm --> */
+
+.menuseach {
+    margin-right: 50px;
+}
+
+.menuseach input {
+    font-size: 15px;
+    padding: 5px 20px;
+}
+
+.menuseach a {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+
+/* nội dung xu huong */
+
+.mainxuhuong {
+    display: flex;
+    font-size: 18px;
+}
+
+.noidungxuhuong {
+    flex: 2;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.noidungxuhuong li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.noidungxuhuong td {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.noidungxuhuong img {
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tinnoibac {
+    flex: 1;
+}
+
+.xuhuong1 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.xuhuong1 img {
+    margin: 10px 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.xuhuongmoi {
+    display: block;
+    margin-left: 10px;
+}
+
+.tensanpham {
+    margin-bottom: 15px;
+}
+
+.tinnoibac h3 {
+    margin-left: 10px;
+    color: rgb(47, 27, 221);
+}
+
+.xuhuongmoi1 {
+    display: flex;
+    margin-top: 30px;
+}
+
+#one {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* <!-- Footer--> */
+
+.footer {
+    margin-top: 80px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+}
+
+#namefooter {
+    font-size: 30px;
+}
+
+.thongtinfooter {
+    padding: 40px;
+    width: 25%;
+}
+
+.thongtinfooter p {
+    font-size: 15px;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.thongtinfooter img {
+    height: 50px;
+    width: 150px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#bankinh {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+#dowload {
+    font-size: 30px;
+}
+
+.thongtindowload {
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.thongtindowload p {
+    text-align: left;
+    color: rgba(155, 145, 145, 0.534);
+}
+
+.thongtindowload img {
+    height: 50px;
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+#user {
+    position: relative;
+}
+
+#user:hover #usermenu {
+    display: block;
+    transition: 0.25s;
+}
+
+#usermenu {
+    background-color: whitesmoke;
+    position: absolute;
+    margin-left: 0;
+    top: 100%;
+    right: 0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 2px #b4b0b0;
+    display: none;
+}
+
+#usermenu::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent whitesmoke transparent;
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+
+#useritem a {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+/* #useritem a:hover {
+        color: #fafafa;
+        background-color: #554f4f;
+        border-radius: 4px;
+    } */
+
+#user img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: 140px;
+}
