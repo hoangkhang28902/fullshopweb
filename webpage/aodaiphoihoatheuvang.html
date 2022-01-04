@@ -40,71 +40,67 @@
         <div class="dieuhuong">
             <ul>
                 <li>
-                    <a href="./webpage/giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ Hàng</a>
+                    <!-- The Modal -->
+                    <button id="cart">
+                        <i class="fas fa-shopping-cart"></i> Giỏ Hàng</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><i class="fas fa-shopping-cart"></i> Giỏ Hàng</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                    <span class="cart-price cart-header cart-column">Giá</span>
+                                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                </div>
+                                <div class="cart-items">
+
+                                </div>
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Tổng tiền:</strong>
+                                    <span class="cart-total-price">0VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                <button type="button" class="btn btn-primary order">Thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
                 </li>
 
                 <!-- phần tài khoản của khách -->
 
-                <li id="user">
-                    <a href=""><i class="fas fa-user-circle"></i> Hoàng Khang</a>
+                 <!-- phần tài khoản của khách -->
+    
+                 <li id="user">
+                    <a href=""><i class="fas fa-user-circle"></i>Tài Khoản</a>
                     <ul id="usermenu">
                         <li id="useritem">
-                            <a href="">Thông tin cá nhân</a>
-                        </li> <br>
-                        <li id="useritem">
-                            <a href="">Thay đổi mật khẩu</a>
+                            <a href="../webpage/login.html">Đổi MK</a>
                         </li>
                         <li id="useritem">
-                            <a href="">Cài đặt tài khoản</a>
+                            <a href="../webpage/login.html">Cài Đặt</a>
                         </li>
                         <li id="useritem">
-                            <a href="../indexlogout.html">Đăng xuất</a>
+                            <a href="../webpage/login.html">Đăng nhập</a>
                         </li>
                     </ul>
-
+    
                 </li>
-
 
             </ul>
         </div>
 
     </div>
-    <!-- Thanh menu để khách chọn  loại sản phẩm  muốn mua-->
-    <div class="menumain">
-        <!-- bấm vào từng phần của menu thì nó sẽ đưa tới phần đó của trang chủ-->
-        <div class="navmenu">
-            <ul>
-                <li>
-                    <a href="#spsale">Sản Phẩm Đang Sale</a>
-                </li>
-                <li>
-                    <a href="#spnew">Sản Phẩm Mới</a>
-                </li>
-                <li>
-                    <a href="#sphot">Sản Phẩm Nổi Bật</a>
-                </li>
-                <li>
-                    <a href="#xuhuong">Xu Hướng</a>
-                </li>
-            </ul>
-        </div>
-        <!-- thanh tìm kiếm -->
 
-        <div class="menuseach">
-            <input type="text" placeholder="Tìm kiếm..."> <a href="webpage/search.html"><i class="fas fa-search"></i></a>
-        </div>
-    </div>
-
+    <!--đường dẫn -->
+    
     <br>
     <div class="duongdan">
-        <a href="">Trang Chủ /</a><a href="">&ensp;Nam/</a><a href="">&ensp;ÁO SƠMI M1SMN11104FOSHT
-            </a>
-    </div>
-
-    <br>
-    <div class="duongdan">
-        <a href="">Trang Chủ /</a><a href="">&ensp;Nữ/</a><a href="">&ensp;ÁO DÀI PHỐI HOA THÊU AD09262
-            </a>
+        <a href="../index.html">Trang Chủ /</a><a href="donu.html">&ensp;Nữ/</a><a href="">&ensp;ÁO DÀI PHỐI HOA THÊU AD09262</a>
     </div>
 
     <br>
@@ -113,31 +109,30 @@
         <div class="imagesanpham">
             <div class="anhminhhoa">
                 <div class="anh1">
-                    <img src="../imageweb/aodaihoathue.jpg" alt="" class="SmallImg">
+                    <img src="../imageweb/aodaiphoihoathuevang2.jpg" alt="" class="SmallImg">
                 </div>
                 <div class="anh2">
-                    <img src="../imageweb/aodaiinhoatiet2.jpg" alt="" class="SmallImg">
+                    <img src="../imageweb/aodaiphoihoathuevang3.jpg" alt="" class="SmallImg">
                 </div>
                 <div class="anh3">
-                    <img src="../imageweb/aodaiinhoatiet3.jpg" alt="" class="SmallImg">
+                    <img src="../imageweb/aodaihoathue.jpg "alt="" class="SmallImg">
                 </div>
 
             </div>
             <div class="mainimagesanpham">
-                <img src="../imageweb/aodaihoathue.jpg" alt="" id="ProductImg">
+                <img src="../imageweb/aodaihoathue.jpg" alt="" id="ProductImg" class="imgsp">
             </div>
 
         </div>
         <div class="thongtinsanpham">
-            <h3>
+            <h3 class="namesp">
                 ÁO DÀI PHỐI HOA THÊU AD09262
-
             </h3>
             <p>Thương hiệu: NEM </p>
             <p>Mã SP:103921432164040201</p>
-            <h3 id="giatiensp">859,000₫</h3>
+            <h3 id="giatiensp" class="pricesp">859000 ₫</h3>
             <select>
-                                 <option>chọn zise</option>
+                                 <option>Chọn size</option>
                                  <option>X</option>
                                  <option>XL</option>
                                  <option>XXL</option>
@@ -146,19 +141,21 @@
                            </select>
             <input type="number" value="1">
 
-
             <a href="">Mua Ngay</a>
             <br>
-            <a id="themvaogio" href="">Thêm vào Giỏ Hàng</a><br><br>
+            <button type="button" class="btn btn-cart">Thêm Vào Giỏ Hàng</button>
+            <br><br>
             <h3>Chi tiết Sản phẩm</h3>
-            <p>
-                <b>Chất liệu</b> vải tổng hợp cao cấp <br><br>
-                <b> Kiểu dáng</b>áo dài thiết kế tay lỡ, tone màu vàng nhạt, kết<br>hợp hoa thêu<br><br>
-                <b>Phù hợp</b> đi làm, sự kiện, hay đi dạo phố, tạo vẻ trẻ trung nữ tính cho người mặc. <br><br>
-                <b>Sản phẩm thuộc dòng sản phẩm</b> NEM NEW <br><br>
-                <b>Thông tin người mẫu</b> mặc sản phẩm size 2 <br>
-            </p>
+        <p>
+            <b>Chất liệu</b> vải tổng hợp cao cấp <br><br>
+            <b> Kiểu dáng</b>áo dài thiết kế tay lỡ, tone màu vàng nhạt, kết<br>hợp hoa thêu<br><br>
+            <b>Phù hợp</b> đi làm, sự kiện, hay đi dạo phố, tạo vẻ trẻ trung nữ tính cho người mặc. <br><br>
+            <b>Sản phẩm thuộc dòng sản phẩm</b> NEM NEW <br><br>
+            <b>Thông tin người mẫu</b> mặc sản phẩm size 2 <br>
+        </p>
 
+   
+   
         </div>
     </div>
     <br>
@@ -235,7 +232,7 @@
     </div>
 
     <div class="bunton">
-        <a href="../index.html">Quay Lại Trang Sản Phẩm</a> &emsp;&emsp;&emsp;&emsp;
+        <a href="../index.html#KainD">Quay Lại Trang Sản Phẩm</a> &emsp;&emsp;&emsp;&emsp;
         <a id="themvaogio" href="../webpage/donu.html">Quay lại Trang Trước</a><br><br>
     </div>
     <h3 id="sanphamtuongtu">
@@ -245,7 +242,7 @@
         <div class="hinhsanpham" style="background-image: url(../imageweb/aodaiinhoatiet.jpg);">
             <img src="../imageweb/hot.gif" alt="dadiemsp">
             <div class="colorbutton">
-                <a href="">Mua Ngay</a>
+                <a href="aodaiinhoatiet.html">Mua Ngay</a>
 
             </div>
 
@@ -263,7 +260,7 @@
         <div class="hinhsanpham" style="background-image: url(../imageweb/aodaihoathue.jpg);">
             <img src="../imageweb/hot.gif" alt="dadiemsp">
             <div class="colorbutton">
-                <a href="">Mua Ngay</a>
+                <a href="aodaiphoihoatheuvang.html">Mua Ngay</a>
 
             </div>
 
@@ -281,7 +278,7 @@
         <div class="hinhsanpham" style="background-image: url(../imageweb/adhoa.jpg);">
             <img src="../imageweb/hot.gif" alt="dadiemsp">
             <div class="colorbutton">
-                <a href="">Mua Ngay</a>
+                <a href="aodaiphoihoathuedo.html">Mua Ngay</a>
 
             </div>
 
@@ -299,7 +296,7 @@
         <div class="hinhsanpham" style="background-image: url(../imageweb/roptop.jpg);">
             <img src="../imageweb/hot.gif" alt="dadiemsp">
             <div class="colorbutton">
-                <a href="">Mua Ngay</a>
+                <a href="roptopdaitay.html">Mua Ngay</a>
 
             </div>
 
@@ -342,7 +339,7 @@
             <p>
                 Phương Thức Thanh Toán
             </p>
-            <img id="bankinh" src="../imageweb/bangkinh.png" alt="">
+            <img id="bankinh" src="../imageweb/internetbanking.png" alt="">
             <img src="../imageweb/thongbao.png" alt="">
 
         </div>
@@ -362,24 +359,7 @@
         <p>Copyright-2021 @KainDShop ----- Design-AĐK_Team</p>
     </div>
 
-    <!----     JS đổi ảnh của sản phẩm           --->
-
-    <script>
-        var ProductImg = document.getElementById("ProductImg");
-        var SmallImg = document.getElementsByClassName("SmallImg");
-
-        SmallImg[0].onclick = function() {
-            ProductImg.src = SmallImg[0].src;
-        }
-        SmallImg[1].onclick = function() {
-            ProductImg.src = SmallImg[1].src;
-        }
-        SmallImg[2].onclick = function() {
-            ProductImg.src = SmallImg[2].src;
-        }
-    </script>
-
-
+    <script src="../js/main.js"></script>
 
 
 </body>

@@ -40,70 +40,67 @@
         <div class="dieuhuong">
             <ul>
                 <li>
-                    <a href="./webpage/giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ Hàng</a>
+                    <!-- The Modal -->
+                    <button id="cart">
+                        <i class="fas fa-shopping-cart"></i> Giỏ Hàng</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><i class="fas fa-shopping-cart"></i> Giỏ Hàng</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                    <span class="cart-price cart-header cart-column">Giá</span>
+                                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                </div>
+                                <div class="cart-items">
+
+                                </div>
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Tổng tiền:</strong>
+                                    <span class="cart-total-price">0VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                <button type="button" class="btn btn-primary order">Thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
                 </li>
 
                 <!-- phần tài khoản của khách -->
 
-                <li id="user">
-                    <a href=""><i class="fas fa-user-circle"></i> Hoàng Khang</a>
+                 <!-- phần tài khoản của khách -->
+    
+                 <li id="user">
+                    <a href=""><i class="fas fa-user-circle"></i>Tài Khoản</a>
                     <ul id="usermenu">
                         <li id="useritem">
-                            <a href="">Thông tin cá nhân</a>
-                        </li> <br>
-                        <li id="useritem">
-                            <a href="">Thay đổi mật khẩu</a>
+                            <a href="../webpage/login.html">Đổi MK</a>
                         </li>
                         <li id="useritem">
-                            <a href="">Cài đặt tài khoản</a>
+                            <a href="../webpage/login.html">Cài Đặt</a>
                         </li>
                         <li id="useritem">
-                            <a href="../indexlogout.html">Đăng xuất</a>
+                            <a href="../webpage/login.html">Đăng nhập</a>
                         </li>
                     </ul>
-
+    
                 </li>
-
 
             </ul>
         </div>
 
     </div>
-    <!-- Thanh menu để khách chọn  loại sản phẩm  muốn mua-->
-    <div class="menumain">
-        <!-- bấm vào từng phần của menu thì nó sẽ đưa tới phần đó của trang chủ-->
-        <div class="navmenu">
-            <ul>
-                <li>
-                    <a href="#spsale">Sản Phẩm Đang Sale</a>
-                </li>
-                <li>
-                    <a href="#spnew">Sản Phẩm Mới</a>
-                </li>
-                <li>
-                    <a href="#sphot">Sản Phẩm Nổi Bật</a>
-                </li>
-                <li>
-                    <a href="#xuhuong">Xu Hướng</a>
-                </li>
-            </ul>
-        </div>
-        <!-- thanh tìm kiếm -->
 
-        <div class="menuseach">
-            <input type="text" placeholder="Tìm kiếm..."> <a href="webpage/search.html"><i class="fas fa-search"></i></a>
-        </div>
-    </div>
-
+    <!--đường dẫn -->
+    
     <br>
     <div class="duongdan">
-        <a href="">Trang Chủ /</a><a href="">&ensp;Nam/</a><a href="">&ensp;ÁO SƠMI M1SMN11104FOSHT
-            </a>
-    </div>
-
-    <br>
-    <div class="duongdan">
-        <a href="">Trang Chủ&nbsp;&nbsp;></a><a href="">Trẻ Em&nbsp;&nbsp;></a><a href="">Bộ thun phong cách thể thao HDNBOY</a>
+        <a href="../index.html">Trang Chủ /</a><a href="dotreem.html">&ensp;Trẻ EM/</a><a href="">&ensp;Bộ thun phong cách thể thao HDNBOY</a>
     </div>
 
     <br>
@@ -115,40 +112,39 @@
                     <img src="../imageweb/betrai1.jpg" alt="" class="SmallImg">
                 </div>
                 <div class="anh2">
-                    <img src="../imageweb/betrai1.1.jpg" alt="" class="SmallImg">
+                    <img src="../imageweb/betrai1.2.jpg" alt="" class="SmallImg">
                 </div>
                 <div class="anh3">
-                    <img src="../imageweb/betrai1.2.jpg" alt="" class="SmallImg">
+                    <img src="../imageweb/betrai1.1.jpg" alt="" class="SmallImg">
                 </div>
 
             </div>
             <div class="mainimagesanpham">
-                <img src="../imageweb/betrai1.jpg" alt="" id="ProductImg">
+                <img src="../imageweb/betrai1.1.jpg" alt="" id="ProductImg" class="imgsp">
             </div>
 
         </div>
         <div class="thongtinsanpham">
-            <h3>
+            <h3 class="namesp">
                 Bộ thun phong cách thể thao HDNBOY
             </h3>
+          
             <p>Mã SP: CBT9311RL</p>
-
-
-            <h3 id="giatiensp">185,000₫</h3>
+            <h3 id="giatiensp" class="pricesp">185000 ₫</h3>
             <select>
                                  <option>Chọn size</option>
-                                 <option>L</option>
-                                 <option>M</option>
                                  <option>X</option>
                                  <option>XL</option>
                                  <option>XXL</option>
+                                 <option>L</option>
+                                 <option>M</option>
                            </select>
             <input type="number" value="1">
 
-
             <a href="">Mua Ngay</a>
             <br>
-            <a id="themvaogio" href="">Thêm vào Giỏ Hàng</a><br><br>
+            <button type="button" class="btn btn-cart">Thêm Vào Giỏ Hàng</button>
+            <br><br>
             <h3>Chi tiết Sản phẩm</h3>
             <p>
                 <p>Độ tuổi: 10 tháng - 15 tuổi</p>
@@ -168,7 +164,7 @@
         <div class="mainbinhluan">
             <i class="fas fa-quote-left"></i>
             <p>
-                Mình là người mua hàng thường xuyên của web , mình thấy sản phẩm rất đẹp và màu sắc cũng dễ chịu, chất liệu vải rất ổn, mát mẻ, giao diện của web mình thấy rất đẹp so với những web bán hàng khác và đặc biệt là shop luôn sale rất nhiều sản phẩm.
+                Mình là người mua hàng thường xuyên của web , mình thấy sản phẩm rất đẹp và màu sẵn cũng dễ chịu , chất liệu vải rất ổn , mát mẻ , giao diện của web mình thấy rất đẹp so với nhất web bán hài khác , cái cuối cùng là web lun sale rất nhiều sản phẩm ^'^
             </p>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="fas fa-quote-right"></i>
             <div class="danhgia">
@@ -183,15 +179,15 @@
             </div>
 
             <h3>
-                Khách Hàng
+                Dấu Tên ^'^
             </h3>
         </div>
         <div class="mainbinhluan">
             <i class="fas fa-quote-left"></i>
             <p>
 
-                Một nhà Phê Bình Nghệ Thuật từng nói : “Đừng chạy theo xu hướng. Đừng khiến bản thân lệ thuộc vào thời trang. Hãy để chính mình là người quyết định bản thân sẽ mặc gì cũng như sẽ sống ra sao”.
-                <br>Là Người hợp tác và cũng là người tthiết kế chính cho các sản phẩm của KainD, tôi tin các sản phẩm này sẽ tạo được ấn tượng mới mẻ dành cho khách hàng.
+                Một nhà Phê Bình Nghệ Thuật Từng nói :“Đừng chạy theo xu hướng. Đừng khiến bản thân lệ thuộc vào thời trang. Hãy để chính mình là người quyết định bản thân sẽ mặc gì cũng như sẽ sống ra sao”.
+                <br>Là Người hợp tác và cũng là người Thiết Kế Chính cho các sản phẩm của KainD tôi tin các sản phẩm này sẽ tạo được ấn tượng mới mẻ dành cho khách hàng.
 
             </p>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="fas fa-quote-right"></i>
@@ -212,7 +208,7 @@
         <div class="mainbinhluan">
             <i class="fas fa-quote-left"></i>
             <p>
-                Là CEO của KainD tôi luôn mong muốn đem lại cho khách hàng những sự lựa chọn tốt nhất về thời trang hiện nay, tôi tin chắc rằng những sản phẩm thời trang của KainD sẽ thành công vang dội trong thị trường nội địa lần quốc tế.
+                Là CEO của KainD tôi luôn mong muốn đem lại cho khách hàng những lược chọn tốt nhất về thời trang hiện này , tôi tin chắc rằng những sản phẩm thời trang của KainD sẽ thành công van dội
             </p>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="fas fa-quote-right"></i>
             <div class="danhgia">
@@ -226,15 +222,15 @@
                 <img src="../imageweb/user.jpg" alt="">
             </div>
             <h3>
-                CEO Nguyễn Hoàng Khang
+                CEO-Nguyễn Hoàng Khang
             </h3>
         </div>
 
     </div>
 
     <div class="bunton">
-        <a href="../index.html">Quay lại trang chủ</a> &emsp;&emsp;&emsp;&emsp;
-        <a id="themvaogio" href="../webpage/donu.html">Quay lại trang sản phẩm</a><br><br>
+        <a href="../index.html#KainD">Quay Lại Trang Sản Phẩm</a> &emsp;&emsp;&emsp;&emsp;
+        <a id="themvaogio" href="../webpage/donu.html">Quay lại Trang Trước</a><br><br>
     </div>
     <h3 id="sanphamtuongtu">
         Sản Phẩm Tương tự
@@ -319,7 +315,7 @@
             <h4 id="namefooter"> Công Ty KainD B&G</h4>
             <br>
             <p>
-                Công ty TNHH Dịch vụ và Thương mại KainD. <br> <br> Số ĐKKD 0107861393, Sở KHĐT Tp. HCM cấp ngày 10/12/2021 <br> <br> Địa chỉ: Phòng 1002, Tầng 10, Tòa nhà KainD <br> Số 545 Đường Nguyễn Văn Cừ, Quận Nguyễn Cư Trinh, TP. Hồ Chí Minh <br>                <br> Hotline: 024 3938 8512 <br> Email: Kaincskh@stripe-vn.com
+                Công ty TNHH Dịch vụ và Thương mại KainD. <br> <br> Số ĐKKD 0107861393, Sở KHĐT Tp. HCM cấp ngày 10/12/2021 <br> <br> Địa chỉ: Phòng 1002, tầng 10, Tòa nhà KainD <br> số 545 đường Nguyễn Văn Cừ, Quận Nguyễn Cư Trinh, Hồ Chí Minh <br> <br>                Hotline: 024 3938 8512 <br> Email: Kaincskh@stripe-vn.com
             </p>
 
         </div>
@@ -329,7 +325,7 @@
             <br>
             <br>
             <p>
-                Chính sách giao nhận - Vận chuyển <br> <br> Hướng dẫn thanh toán <br> <br> Tra cứu đơn hàng <br> <br> Hướng dẫn chọn size <br> <br> Quy định đổi hàng <br> <br> Quy định bảo hành và sửa chữa <br> <br> Khách hàng thân thiết
+                Chính sách giao nhận - Vận chuyển <br> <br> Hướng dẫn thanh toán <br> <br> Tra cứu đơn hàng <br> <br> Hướng dẫn chọn Size <br> <br> Quy định đổi hàng <br> <br> Quy định bảo hành và sửa chữa <br> <br> Khách hàng thân thiết
             </p>
 
         </div>
@@ -340,15 +336,15 @@
             <p>
                 Phương Thức Thanh Toán
             </p>
-            <img id="bankinh" src="../imageweb/bangkinh.png" alt="">
+            <img id="bankinh" src="../imageweb/internetbanking.png" alt="">
             <img src="../imageweb/thongbao.png" alt="">
 
         </div>
         <div class="thongtindowload">
-            <h4 id="dowload"> Tải Ứng Dụng Của Chúng Tôi Tại</h4>
+            <h4 id="dowload"> Tải Ứng Dụng Của Chúng Tôi tại</h4>
             <br>
             <p>
-                Áp dụng cho cả điện thoại và máy tính <br> <br>
+                áp dụng cho cả điện thoại và máy tính <br> <br>
             </p>
             <img src="../imageweb/play-store.png" alt="">
             <img src="../imageweb/app-store.png" alt="">
@@ -360,24 +356,7 @@
         <p>Copyright-2021 @KainDShop ----- Design-AĐK_Team</p>
     </div>
 
-    <!----     JS đổi ảnh của sản phẩm           --->
-
-    <script>
-        var ProductImg = document.getElementById("ProductImg");
-        var SmallImg = document.getElementsByClassName("SmallImg");
-
-        SmallImg[0].onclick = function() {
-            ProductImg.src = SmallImg[0].src;
-        }
-        SmallImg[1].onclick = function() {
-            ProductImg.src = SmallImg[1].src;
-        }
-        SmallImg[2].onclick = function() {
-            ProductImg.src = SmallImg[2].src;
-        }
-    </script>
-
-
+    <script src="../js/main.js"></script>
 
 
 </body>
